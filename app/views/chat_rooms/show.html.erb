@@ -1,0 +1,15 @@
+<style>
+#messages {
+  max-height: 450px;
+  overflow-y: auto;
+  .avatar {
+    margin: 0.5rem;
+  }
+}
+</style>
+
+<h1><%= @chat_room.title %></h1>
+
+<div id="messages">
+  <%= render @chat_room.messages %>
+</div>
